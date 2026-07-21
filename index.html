@@ -208,7 +208,7 @@
     <canvas id="particle-canvas"></canvas>
 
     <nav class="auth-nav">
-        <a href="../index.html" class="logo">
+        <a href="/" class="logo">
             Kutubxona <span>Raqamli Portal</span>
         </a>
         <button class="theme-toggle" onclick="toggleTheme()" id="themeIcon">🌙</button>
@@ -424,7 +424,7 @@
                     localStorage.setItem('token', data.token);
                     localStorage.setItem('user', JSON.stringify(data.user));
                     showAlert("Muvaffaqiyatli kirdingiz! Yo'naltirilmoqdasiz...", true);
-                    setTimeout(() => window.location.href = '../index.html', 1200);
+                    setTimeout(() => window.location.href = '/', 1200);
                 } else {
                     showAlert(data.message || "Username yoki parol noto'g'ri!");
                 }
@@ -432,7 +432,7 @@
                 console.log("Backend ulanmagan: Demo token saqlanmoqda");
                 localStorage.setItem('token', 'demo-jwt-token');
                 showAlert("Demo rejimda muvaffaqiyatli kirdingiz!", true);
-                setTimeout(() => window.location.href = '../index.html', 1000);
+                setTimeout(() => window.location.href = '/', 1000);
             }
         }
 
